@@ -159,4 +159,5 @@ PRODUCT_PACKAGES += \
     QStileWavey \
     QStileCookie \
     QStileInkDrop \
-    QStileSquaremedo
+    QStileSquaremedo \
+    QStileCircleOutline
