@@ -112,3 +112,6 @@ PRODUCT_COPY_FILES += \
 # Include product overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+# Inherit from audio config
+$(call inherit-product, vendor/pixelstyle/config/audio.mk)
