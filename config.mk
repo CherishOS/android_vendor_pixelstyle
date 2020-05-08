@@ -33,10 +33,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
-# build.prop entrys
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wallpapers_loc_request_suw=true
-
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
@@ -58,9 +54,7 @@ else
 endif
 
 # Files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media,$(TARGET_COPY_OUT_PRODUCT)/media)
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -99,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/fonts/SonySketch.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/SonySketch.ttf \
     vendor/pixelstyle/fonts/Surfer.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Surfer.ttf 
 
-# Include package overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/common/
+# Include product overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
