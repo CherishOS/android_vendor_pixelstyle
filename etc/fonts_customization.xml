@@ -129,6 +129,10 @@
     <alias name="goudy" to="lgsmartgothic" />
     <alias name="fantasy" to="lgsmartgothic" />
     <alias name="ITC Stone Serif" to="lgsmartgothic" />
+	
+	<family customizationType="new-named-family" name="linotte">
+        <font weight="300" style="normal">Linotte.ttf</font>
+    </family>
 
     <family customizationType="new-named-family" name="rosemary">
       <font weight="300" style="normal">Rosemary-Regular.ttf</font>

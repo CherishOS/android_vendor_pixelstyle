@@ -136,6 +136,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/fonts/fontage/routed-gothic-narrow-half-italic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/routed-gothic-narrow-half-italic.ttf \
     vendor/pixelstyle/fonts/fontage/SofiaSans-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/SofiaSans-Regular.ttf \
     vendor/pixelstyle/fonts/fontage/SofiaSans-Medium.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/SofiaSans-Medium.ttf \
+    vendor/pixelstyle/fonts/Linotte.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Linotte.ttf \
     vendor/pixelstyle/fonts/fontage/SofiaSansSemiCond-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/SofiaSansSemiCond-Regular.ttf \
     vendor/pixelstyle/fonts/fontage/SofiaSansSemiCond-Medium.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/SofiaSansSemiCond-Medium.ttf
 
