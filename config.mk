@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019Static \
     PixelThemesStub2019 \
     SafetyHubPrebuilt \
+    OPScreenRecorder \
     SettingsIntelligenceGooglePrebuilt \
     GooglePermissionControllerOverlay
 
