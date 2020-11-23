@@ -77,3 +77,6 @@ $(call inherit-product, vendor/pixelstyle/config/audio.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/pixelstyle/config/fonts.mk)
+
+# Inherit from rro-overlays config
+$(call inherit-product, vendor/pixelstyle/config/rro_overlays.mk)
