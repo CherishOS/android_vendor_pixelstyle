@@ -16,7 +16,8 @@
 
 # CherishOS Overlays
 PRODUCT_PACKAGES += \
-    CherishConfigOverlay
+    CherishConfigOverlay \
+    SettingsGoogleOverlayCherish
 
 # Google Overlays
 PRODUCT_PACKAGES += \
