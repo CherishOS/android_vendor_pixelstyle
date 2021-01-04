@@ -20,11 +20,6 @@ LOCAL_PATH := vendor/pixelstyle
 PRODUCT_PACKAGES += \
     OPScreenRecord
 
-ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
-PRODUCT_PACKAGES += \
-    Papers
-endif
-
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
@@ -79,9 +74,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Inherit from audio config
 $(call inherit-product, vendor/pixelstyle/config/audio.mk)
-
-# Inherit from bootanimation config
-$(call inherit-product, vendor/pixelstyle/config/bootanimation.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/pixelstyle/config/fonts.mk)
